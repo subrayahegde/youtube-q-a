@@ -11,8 +11,7 @@ from youtube_transcript_api import YouTubeTranscriptApi
 # load environment variables
 load_dotenv()
 # configure key
-GEMINI_API_KEY = "AIzaSyCXan266CbUVvHnl29uQFyDCDTrhAbiw-g"
-genai.configure(api_key=GEMINI_API_KEY)
+genai.configure(api_key=st.key["gemini_api_key"])
 
 
 # initialize gemini pro model
